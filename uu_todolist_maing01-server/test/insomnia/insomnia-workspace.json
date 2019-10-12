@@ -1,0 +1,2118 @@
+{
+  "_type": "export",
+  "__export_format": 3,
+  "__export_date": "2019-04-09T09:50:22.768Z",
+  "__export_source": "insomnia.desktop.app:v6.3.2",
+  "resources": [
+    {
+      "_id": "wrk_b1bb185477c7519b3b227d9251742bd3f76dd9db1786a3a3ac9511cfe3e98bce",
+      "created": 1549535555731,
+      "description": "",
+      "modified": 1549535555731,
+      "name": "uuTodolistMaing01",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_733eb97d5fbd79ed4971ea03b6834a2158233e6d6d4fbfb20a2f4e0c92cf825e",
+      "color": null,
+      "created": 1549535556151,
+      "data": {
+        "contextPath": "uu-todolist-maing01",
+        "token": "<token>"
+      },
+      "isPrivate": false,
+      "metaSortKey": 1549535556151,
+      "modified": 1554795837107,
+      "name": "New Environment",
+      "parentId": "wrk_b1bb185477c7519b3b227d9251742bd3f76dd9db1786a3a3ac9511cfe3e98bce",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_218aced02754bec8701660b467a0268fbba668a80306d0b3667f05ab865672a2",
+      "cookies": [],
+      "created": 1549535556198,
+      "modified": 1549535556198,
+      "name": "Default Jar",
+      "parentId": "wrk_b1bb185477c7519b3b227d9251742bd3f76dd9db1786a3a3ac9511cfe3e98bce",
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "fld_153c02d448a27f786f4fddf7886e3f86ffd7d562b5cda9184dfbd9faeb677ea8",
+      "created": 1549535903197,
+      "description": "",
+      "environment": {},
+      "metaSortKey": -1549535903197,
+      "modified": 1549535903197,
+      "name": "Monitoring",
+      "parentId": "wrk_b1bb185477c7519b3b227d9251742bd3f76dd9db1786a3a3ac9511cfe3e98bce",
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "created": 1549537020079,
+      "description": "",
+      "environment": {},
+      "metaSortKey": -1549535903247,
+      "modified": 1549879324414,
+      "name": "uuAppWorkspace",
+      "parentId": "wrk_b1bb185477c7519b3b227d9251742bd3f76dd9db1786a3a3ac9511cfe3e98bce",
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "created": 1549871664117,
+      "description": "",
+      "environment": {},
+      "metaSortKey": -1549535903134.5,
+      "modified": 1549874553835,
+      "name": "uuBinaryStore",
+      "parentId": "wrk_b1bb185477c7519b3b227d9251742bd3f76dd9db1786a3a3ac9511cfe3e98bce",
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_a2fd4abdb572c799d87127bd095238cd5cb0250057eca6931ffa9669b49db4eb",
+      "created": 1549874536645,
+      "description": "",
+      "environment": {},
+      "metaSortKey": -1549535903122,
+      "modified": 1549874551689,
+      "name": "uuAppAuditLog",
+      "parentId": "wrk_b1bb185477c7519b3b227d9251742bd3f76dd9db1786a3a3ac9511cfe3e98bce",
+      "_type": "request_group"
+    },
+    {
+      "_id": "fld_ed620d46b2c2016dcfa77dfe7b6f15dcc4414d2e036da70ab732d93ae1df121c",
+      "created": 1549880911795,
+      "description": "",
+      "environment": {},
+      "metaSortKey": -1549535903072,
+      "modified": 1549880914169,
+      "name": "uuTodolistMaing01",
+      "parentId": "wrk_b1bb185477c7519b3b227d9251742bd3f76dd9db1786a3a3ac9511cfe3e98bce",
+      "_type": "request_group"
+    },
+    {
+      "_id": "env_c024b281fdad1f35fda6a58346f260fd4c0bf7aee59f1d562f05288ed000a6e1",
+      "color": "#7d69cb",
+      "created": 1549535585354,
+      "data": {
+        "asid": "11111111111111111111111111111111",
+        "awid": "<awid>",
+        "awidOwner": "<awidOwner>",
+        "host": "http://localhost:8080"
+      },
+      "isPrivate": false,
+      "metaSortKey": 1,
+      "modified": 1549536507671,
+      "name": "localhost",
+      "parentId": "env_733eb97d5fbd79ed4971ea03b6834a2158233e6d6d4fbfb20a2f4e0c92cf825e",
+      "_type": "environment"
+    },
+    {
+      "_id": "env_115ea49bab1f36c6de0cdefa87d062805cf2aa1806d1d15e01ba24ce8f404546",
+      "color": "#ff8040",
+      "created": 1549535587834,
+      "data": {
+        "asid": "<asid>",
+        "awid": "<awid>",
+        "awidOwner": "<awidOwner>",
+        "host": "https://uuos9.plus4u.net"
+      },
+      "isPrivate": false,
+      "metaSortKey": 0,
+      "modified": 1549535822949,
+      "name": "cloud DEV",
+      "parentId": "env_733eb97d5fbd79ed4971ea03b6834a2158233e6d6d4fbfb20a2f4e0c92cf825e",
+      "_type": "environment"
+    },
+    {
+      "_id": "req_f7ae819a899cf035a1923d2b8edf1171861ce75f556620653a06adbe14e11e88",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549536025167,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetHealth_00",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208,
+      "method": "GET",
+      "modified": 1554802047273,
+      "name": "sys/getHealth",
+      "parameters": [],
+      "parentId": "fld_153c02d448a27f786f4fddf7886e3f86ffd7d562b5cda9184dfbd9faeb677ea8",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/getHealth",
+      "_type": "request"
+    },
+    {
+      "_id": "req_04733a318b09e06859198c0bd157556c626b7ee1576452fa9ae2dd0c433270df",
+      "authentication": {
+        "prefix": "",
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549536058108,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetStatistics_00",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1549536151183,
+      "method": "GET",
+      "modified": 1554802069873,
+      "name": "sys/getStatistics",
+      "parameters": [],
+      "parentId": "fld_153c02d448a27f786f4fddf7886e3f86ffd7d562b5cda9184dfbd9faeb677ea8",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/getStatistics",
+      "_type": "request"
+    },
+    {
+      "_id": "req_59b9a18347e49936d8b0d273c77451869814d541eb04e82b583f86ecf05dfb68",
+      "authentication": {
+        "prefix": "",
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549536068188,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetConfiguration_00",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1549536151170.5,
+      "method": "GET",
+      "modified": 1554802082834,
+      "name": "sys/getConfiguration",
+      "parameters": [],
+      "parentId": "fld_153c02d448a27f786f4fddf7886e3f86ffd7d562b5cda9184dfbd9faeb677ea8",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/getConfiguration",
+      "_type": "request"
+    },
+    {
+      "_id": "req_73694a072679d1e2d5ff6a67995b3646b70d0da9140d601c1303d95518197650",
+      "authentication": {
+        "prefix": "",
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549536132305,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetEnvironment_00",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1549536151164.25,
+      "method": "GET",
+      "modified": 1554802097580,
+      "name": "sys/getEnvironment",
+      "parameters": [],
+      "parentId": "fld_153c02d448a27f786f4fddf7886e3f86ffd7d562b5cda9184dfbd9faeb677ea8",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/getEnvironment",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a1ba603159523ac291a94adccaa759ec614b3ec898c108a70f6c75f02b429a14",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549536143342,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysResetStatistics_00",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1549536151161.125,
+      "method": "POST",
+      "modified": 1554802107763,
+      "name": "sys/resetStatistics",
+      "parameters": [],
+      "parentId": "fld_153c02d448a27f786f4fddf7886e3f86ffd7d562b5cda9184dfbd9faeb677ea8",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/resetStatistics",
+      "_type": "request"
+    },
+    {
+      "_id": "req_cb608e8cf5c20f6add2ecf77ae0c60edf7b8fe5f734a05f1685b578f87b16cc2",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{}"
+      },
+      "created": 1549536151158,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetUseCases_00",
+      "headers": [
+        {
+          "id": "pair_5e80f85b9ecb470ea70c500d239f3a69",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151158,
+      "method": "GET",
+      "modified": 1554802130132,
+      "name": "sys/getUseCases",
+      "parameters": [],
+      "parentId": "fld_153c02d448a27f786f4fddf7886e3f86ffd7d562b5cda9184dfbd9faeb677ea8",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/getUseCases",
+      "_type": "request"
+    },
+    {
+      "_id": "req_97b89d178dea90890460e7035f547b230147f76bd18f5aaf3461796e942eaeb7",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n  \"runtimeMode\": {\n    \"mode\": \"standard\"  \n  }\n}"
+      },
+      "created": 1549537037445,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysInitAsid_00\n\n#### Input\n```javascript\n{ \n  // attributes which will be stored in SysAppConfig uuObject; \n  runtimeMode: {\n    mode: \"standard\"    //code of the runtime mode (privileged/standard)\n  }\n  ... // other attributes\n};\n```\n#### Validation schema\n```javascript\nshape({\n  runtimeMode: sysSetAppRuntimeModeDtoInType()\n},NOSTRICT,16000) \n```\n#### Output\n```javascript\n{\n  ... // uuObject sysAppConfig\n  uuAppErrorMap: {} // uuApp standard errorMap\n};\n```",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549537037445,
+      "method": "POST",
+      "modified": 1554799639602,
+      "name": "sys/initApp",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/initApp",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9e2179467ea1e5bd88113172c9ce6d9484ee1bcc1cd35e6dcf5ee88021cd780c",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"awid\": \"...\",                            \n  \"awidOwner\": \"...\",                       \n  \"licenseOwner\": {                         \n    \"organization\": {                       \n      \"name\": \"...\",                        \n      \"oId\": \"...\",                         \n      \"web\": \"...\"                          \n    },\n    \"userList\": [                           \n      {\n        \"uuIdentity\": \"...\",                \n        \"name\": \"...\"                       \n      }\n    ]\n  }\n}"
+      },
+      "created": 1549537138221,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysInitAppWorkspace_00\n#### Input\n```javascript\n{\n  awid: \"...\",                            //unique id of uuAppWorkspace specied externaly\n  awidOwner: \"...\",                       //uuIdentity of uuAppWorkspace AwidOwner uuEE\n  licenseOwner: {                         //information about uuAppWorkspace license\n    organization: {                       //only if the license is owned by organisation\n      name: \"...\",                        //name of the organization\n      oId: \"...\",                         //unique id of organization in plus4u\n      web: \"...\"                          //uri of the web page of organization\n    },\n    userList: [                           //array of competent persons; at least one person is mandatory\n      {\n        uuIdentity: \"...\",                //unique identifier of user in plus4u\n        name: \"...\"                       //whole name of the user (first name + surname)\n      }\n    ]\n  },\n  runtimeMode: { \n    mode: \"standard\",                     //code of the awid runtime mode (standard/privileged), default to standard.\n    note: \"AWID migration\",               //reason for setting the runtime mode\n    to: \"2018-06-21T10:15:30.000Z\"        //expected time to which the mode is set (ISO 8601 date format)\n  }\n};\n```\n#### Validation schema\n```javascript\nshape({\n  awid: hex32code().isRequired(),\n  awidOwner: uuIdentity().isRequired(),\n  licenseOwner: shape({  \n    organization: shape({\n      name: uu5String(4000).isRequired(),\n      oId: code().isRequired(),\n      web: uri()\n    }),\n    userList: array(\n      shape({\n        uuIdentity: uuIdentity().isRequired(),\n        name: uu5String(4000).isRequired(),\n      }), 1, 30\n    ).isRequired()\n  }).isRequired(),\n  runtimeMode: shape({\n    mode: oneOf([\"standard\",\"privileged\"]).isRequired(),\n    note: uu5String(),\n    to: datetime()\n  })\n}) \n```\n#### Output\n```javascript\n{\n  uuAppErrorMap: {} //uuApp standard errorMap\n};\n```",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536594326.5,
+      "method": "POST",
+      "modified": 1554799800989,
+      "name": "sys/initAppWorkspace",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/initAppWorkspace",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1a2e484ebd9ec14561b8bf8e9be2406832d66dbfbb69938f97a1e56f4fd54f20",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"awid\": \"...\" \n}"
+      },
+      "created": 1549537222822,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetAppWorkspace_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536372767.25,
+      "method": "GET",
+      "modified": 1554800684460,
+      "name": "sys/getAppWorkspace - asid",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/getAppWorkspace",
+      "_type": "request"
+    },
+    {
+      "_id": "req_385bc775894ba4ac9e20853278c07c92463744fe883dc9cf60e025e092835d0a",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549537267580,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetAppWorkspace_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536261987.625,
+      "method": "GET",
+      "modified": 1554800693067,
+      "name": "sys/getAppWorkspace - awid",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/getAppWorkspace",
+      "_type": "request"
+    },
+    {
+      "_id": "req_421b97b97f625e0c3b4c77e6d4343ad675636a0556395b639a6df5ca523cbc84",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"code\": \"Readers\"\n}"
+      },
+      "created": 1549537312582,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetProfile_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536206597.8125,
+      "method": "GET",
+      "modified": 1554800745779,
+      "name": "sys/getProfile",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/getProfile",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b38ce96ccaa5a744df4d5ae93dabd8195dd925d15a66dd7dc8cc6c0ecb9cf503",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"code\": \"Authorities\", \n  \"roleUri\": \"ues:[84723967990075193]:[74309394208653707]\" \n}"
+      },
+      "created": 1549537353298,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysSetProfile_00\n\n#### Input\n```javascript\n{\n  code: \"Authorities\", // profile code; must be set\n  roleUri: \"ues:[84723967990075193]:[74309394208653707]\" //URI of role (global group All - urn:uu:GGALL; global group All from Plus4U - urn:uu:GGPLUS4U)\n                                                         //If null uri (ues:[-1]:[-1]) is set, roleUri is set to nill\n};\n```\n#### Validation schema\n```javascript\nshape({\n  code: code().isRequired(),\n  roleUri: uri().isRequired()\n}) \n```\n#### Output\n```javascript\n{\n  ... // uuObject sysProfile\n  uuAppErrorMap: {} // standard uuAppErrorMap\n};\n```",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536178902.9062,
+      "method": "POST",
+      "modified": 1554801132407,
+      "name": "sys/setProfile",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/setProfile",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3cb56f72c2bd082b89862e554c819f8d94d742e8363bd7ce12e2bbcb2b8c29b0",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"codeList\": [\"Authorities\"],\n  \"pageInfo\": { \n    \"pageIndex\": 0,\n    \"pageSize\": 1000 \n  }\n}"
+      },
+      "created": 1549537511156,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysListProfiles_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536165055.4531,
+      "method": "GET",
+      "modified": 1554801143860,
+      "name": "sys/listProfiles",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/listProfiles",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c9c2af40895cd97b8ad1e354d450abf61fadf67b1d9d7be3347f5a94652f6c95",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"profileCode\": \"Authorities\", \n  \"uuIdentityList\": [\"1-1\", \"101-1\"]\n}"
+      },
+      "created": 1549537577205,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysCreatePermission_00\n\n#### Input\n```javascript\n{\n  profileCode: \"authorities\", // profile code; must be set\n  uuIdentityList: [\"1-1\", \"101-1\"], // string or array of strings with identity uuIdentities; must be set; max 10 items\n  ttl: 1800 // allows to create temporary permission (will be automatically removed after specified time in seconds)\n};\n```\n#### Validation schema\n```javascript\nshape({\n  profileCode: code().isRequired(),\n  uuIdentityList: oneOf([uuIdentity(), array(uuIdentity(), 1, 10)]).isRequired(),\n  ttl: integer()\n}) \n```\n#### Output\n```javascript\n{\n  itemList: [ // array of created permissions\n    {} // uuObject sysPermission\n  ],\n  uuAppErrorMap: {} // standard uuAppErrorMap\n};\n```",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536158131.7266,
+      "method": "POST",
+      "modified": 1554801119528,
+      "name": "sys/createPermission",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/createPermission",
+      "_type": "request"
+    },
+    {
+      "_id": "req_30434617cccb43e2de96abc3301d1c7e8e028bfffb7fb3147557a76bfc440939",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"profileCode\": \"Authorities\",\n  \"uuIdentityList\": [\"1-1\", \"101-1\"] \n}"
+      },
+      "created": 1549537760656,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysDeletePermission_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536154669.8633,
+      "method": "POST",
+      "modified": 1554801123131,
+      "name": "sys/deletePermission",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/deletePermission",
+      "_type": "request"
+    },
+    {
+      "_id": "req_afce83d259a1aca74ff25f576067af7befb7ded24df84230776dc093adad7404",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"profileCodeList\": [\"Authorities\"], \n  \"uuIdentityList\": [\"1-1\", \"101-1\"], \n  \"pageInfo\": { \n    \"pageIndex\": 0,\n    \"pageSize\": 1000\n  }\n}"
+      },
+      "created": 1549537807699,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysListPermission_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536152938.9316,
+      "method": "GET",
+      "modified": 1554801115030,
+      "name": "sys/listPermissions",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/listPermissions",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3569dccbac5238dade6ca246e7597d4b855c1401d7ecff5f47e682bbaf7b1d23",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549538017767,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetLicenseOwner_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536152073.4658,
+      "method": "GET",
+      "modified": 1554801292817,
+      "name": "sys/getLicenseOwner",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/getLicenseOwner",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9d617db6ed5ec71b9194d83043d7e0904f3cf3a8066111e45bc01e0722619a4c",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549538041321,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetAppWorkspaceConfig_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151640.733,
+      "method": "GET",
+      "modified": 1554801311135,
+      "name": "sys/getAppWorkspaceConfig",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/getAppWorkspaceConfig",
+      "_type": "request"
+    },
+    {
+      "_id": "req_21cf7580f74c67d8ee8ef2a9a5f223dbd2e76c03a347fbeae36b1496da62a1c8",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n  \"defaultColourSchema\": \"red\",\n  \"welcomeMessageLsi\": {\n    \"cs\": \"Vítejte.\",\n    \"en\": \"Welcome\"\n  }\n}"
+      },
+      "created": 1549538061933,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysSetAppWorkspaceConfig_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151424.3665,
+      "method": "POST",
+      "modified": 1554801328706,
+      "name": "sys/setAppWorkspaceConfig",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/setAppWorkspaceConfig",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a01401efb5296b7af8c2959f91daf66885c2d4e303511a0b24a4187a7345ebfa",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549538126148,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysClearAppWorkspaceConfig_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151316.183,
+      "method": "POST",
+      "modified": 1554801338724,
+      "name": "sys/clearAppWorkspaceConfig",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/clearAppWorkspaceConfig",
+      "_type": "request"
+    },
+    {
+      "_id": "req_75afa5ddd7f14a9d56d3a4c2ccd0b49ea5d447dc6b2d29a4f054bcb7db8632b7",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"force\": true\n}"
+      },
+      "created": 1549538165683,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysCalculateDataStoreStats_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151262.0916,
+      "method": "POST",
+      "modified": 1554801382854,
+      "name": "sys/calculateDataStoreStats",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/calculateDataStoreStats",
+      "_type": "request"
+    },
+    {
+      "_id": "req_897a6a9316ddfe7f8008c4610ab9fb645b2989a76778cedc0c46910c408f0334",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549538219514,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetDataStoreStats_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151235.046,
+      "method": "GET",
+      "modified": 1554801398943,
+      "name": "sys/getDataStoreStats",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/getDataStoreStats",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ad90e1567859add59efc973beac3d42d9a030dc8588a7b5776781fc3a15b89a3",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"awidList\": [\"....\", \"....\"], \n  \"pageInfo\": {\n    \"pageIndex\": 0,\n    \"pageSize\": 1000 \n  }  \n}"
+      },
+      "created": 1549538237245,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysListDataStoreStats_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151221.523,
+      "method": "GET",
+      "modified": 1554801423830,
+      "name": "sys/listDataStoreStats",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/listDataStoreStats",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3cb2954051622923930ae2ede9c1d47e4fd14549aaaf00abed63cb2ebe0d5108",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n  \"defaultColourSchema\": \"red\"\n}"
+      },
+      "created": 1549538279352,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysSetAppConfig_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151214.7615,
+      "method": "POST",
+      "modified": 1554801461369,
+      "name": "sys/setAppConfig",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/setAppConfig",
+      "_type": "request"
+    },
+    {
+      "_id": "req_cddaef64d8d3045c74893a555c3e3c11797854ef2032273693a45107e335bf64",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549538319422,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetAppConfig_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151211.3809,
+      "method": "GET",
+      "modified": 1554801470465,
+      "name": "sys/getAppConfig",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/getAppConfig",
+      "_type": "request"
+    },
+    {
+      "_id": "req_da4aaa4eb3cbda3f795d60860a691cd969e3b42179d97efe82848c684ca826ea",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n  \"mode\": \"privileged\",                   \n  \"note\": \"Migration to version 2.0\",     \n  \"to\": \"2018-06-21T10:15:30.000Z\"        \n}"
+      },
+      "created": 1549538343754,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysSetAppRuntimeMode_00\n\n#### Input\n```javascript\n{ \n  mode: \"privileged\",                        //code of the runtime mode (standard/privileged)\n  note: \"Migration to version 2.0\",          //reason for setting the runtime mode\n  to: \"2018-06-21T10:15:30.000Z\"             //expected time to which the mode is set (ISO 8601 date format)\n};\n```\n#### Validation schema\n```javascript\nshape({\n  mode: oneOf([\"standard\",\"privileged\"]).isRequired(),\n  note: uu5String(),\n  to: datetime()\n}) \n```\n#### Output\n```javascript\n{\n  uuAppErrorMap: {} //uuApp standard errorMap\n};\n```",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151209.6904,
+      "method": "POST",
+      "modified": 1554801543632,
+      "name": "sys/setAppRuntimeMode",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/setAppRuntimeMode",
+      "_type": "request"
+    },
+    {
+      "_id": "req_512e39bbcea0300757320d032c9c8c7f888cc02b06de42cb7eb09ea6f0c2d194",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549538384346,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetAppRuntimeMode_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.8452,
+      "method": "GET",
+      "modified": 1554801564625,
+      "name": "sys/getAppRuntimeMode",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/getAppRuntimeMode",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1979007e0a5f9f905cc4e9e492cf1c04a22865ea3b68f14ed88dcf8bbda1f5e4",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n  \"mode\": \"privileged\",                  \n  \"note\": \"Migration ...\",               \n  \"to\": \"2018-06-21T10:15:30.000Z\"       \n}"
+      },
+      "created": 1549538410047,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysSetAwidRuntimeMode_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.4226,
+      "method": "POST",
+      "modified": 1554801594395,
+      "name": "sys/setAwidRuntimeMode",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/setAwidRuntimeMode",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a4763fe564cc3513d9c9675a82c1f7d1ab23d7437de9e8fbfb4e88e601885ce4",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549538450396,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysGetAwidRuntimeMode_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.2114,
+      "method": "GET",
+      "modified": 1554801601847,
+      "name": "sys/getAwidRuntimeMode",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/getAwidRuntimeMode",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f3bd6ba663b68cc203cfc542a81739e0dfe83f0ffe9381142492663be68a542f",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"authorizationStrategy\": \"artifact\"\n}"
+      },
+      "created": 1549538483775,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=84522044",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.1057,
+      "method": "POST",
+      "modified": 1554801650397,
+      "name": "sys/setAuthType",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/setAuthType",
+      "_type": "request"
+    },
+    {
+      "_id": "req_cf993cc80d99108a3b6eea1e3b6de421d61a633320ee7a79cd674d2bae295586",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"artifactUri\": \"...\"\n}"
+      },
+      "created": 1549538528126,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysConnectArtifact_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.0527,
+      "method": "POST",
+      "modified": 1554801673790,
+      "name": "sys/connectArtifact",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/connectArtifact",
+      "_type": "request"
+    },
+    {
+      "_id": "req_fa1833c93ec1ae0856c8466b4ed7198e1de7f9c4e117b703eb9649c8aa8fa216",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n  \"awidList\": [\"...\", \"...\"]\n}"
+      },
+      "created": 1549538558705,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysDump_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.0264,
+      "method": "GET",
+      "modified": 1554801691579,
+      "name": "sys/dump",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/dump",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f6c0c02bc326c5a7bb8dccb1485d721b06a2c12dd48f47a1c540a30203e8d767",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "disabled": true,
+            "id": "pair_58d0bcbbe5804ab9ad1e7c8cf5eb9bc6",
+            "multiline": false,
+            "name": "strictMode",
+            "type": "text",
+            "value": "true"
+          },
+          {
+            "disabled": true,
+            "id": "pair_a02ffc77a68d4107bf2e1ccedec32700",
+            "name": "awidList[0]",
+            "value": ""
+          },
+          {
+            "id": "pair_64b15e6c9c4f46179c1ee26ef57b5903",
+            "name": "data",
+            "type": "file",
+            "value": ""
+          }
+        ]
+      },
+      "created": 1549538607338,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysRestore_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.0132,
+      "method": "POST",
+      "modified": 1554801813798,
+      "name": "sys/restore",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/restore",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ba92874287a9d8d8fd104e8323fcc694f825ba6c45cf85c1674ae7acc8521ad2",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549538705160,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysAwidDump_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.0066,
+      "method": "GET",
+      "modified": 1554801765678,
+      "name": "sys/awidDump",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/awidDump",
+      "_type": "request"
+    },
+    {
+      "_id": "req_8d4f376a8c230afec8a17e9c3a0bf6cf3e72a549d693d138ea10c4948a90b34e",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_33406ebe5def44c987ef0b5648938af8",
+            "multiline": false,
+            "name": "strictMode",
+            "type": "text",
+            "value": "true"
+          },
+          {
+            "id": "pair_0a94b1866b4541778b5fa25d726eb67a",
+            "name": "data",
+            "type": "file",
+            "value": ""
+          }
+        ]
+      },
+      "created": 1549538735885,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysAwidRestore_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.0034,
+      "method": "POST",
+      "modified": 1554801831591,
+      "name": "sys/awidRestore",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/awidRestore",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4605e7ac095b25f1fe178bb09a02881c3f76350ee5ac926108f1e0285e12e998",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n  \"awid\": \"...\",\n  \"state\": \"...\"\n}"
+      },
+      "created": 1549538815434,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysSetAppWorkspaceState_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.0017,
+      "method": "POST",
+      "modified": 1554801867336,
+      "name": "sys/setAppWorkspaceState",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/setAppWorkspaceState",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3389fd4e76471c956f4d664b0e91dd798867080d7aad57a8fe8f603848bd70e5",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n  \"awid\": \"...\" \n}"
+      },
+      "created": 1549538864047,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysDeleteAppWorkspace_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.001,
+      "method": "POST",
+      "modified": 1554801885948,
+      "name": "sys/deleteAppWorkspace",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/deleteAppWorkspace",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a9b39ded7a194b22dbc4fd69917e67f7cf0790c57009ba8b1dfeb476fdc29b8b",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549538902378,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysAppClientTokenInitKeys_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.0005,
+      "method": "POST",
+      "modified": 1554801903035,
+      "name": "sys/appClientToken/initKeys",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/appClientToken/initKeys",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3c922864665157fa0c903115fca9c8f9283e75198a620737f286ddf546ec5bdb",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1549538921708,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=sysAppClientTokenListKeys_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549536151208.0002,
+      "method": "GET",
+      "modified": 1554801913512,
+      "name": "sys/appClientToken/listKeys",
+      "parameters": [],
+      "parentId": "fld_72c8887758fafc857b9253d2a6d82fa769ea7a4c9aa50687ef39fb929446c5f1",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ asid  }}/sys/appClientToken/listKeys",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f502d2ae4316e532794241a191c07ed4a70baf99e1cfdc9efaeb5ef44eb25a3b",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "disabled": false,
+            "id": "pair_c708b2ef8ccf4646b36cbe19bea8e5f3",
+            "name": "code",
+            "value": ""
+          },
+          {
+            "disabled": false,
+            "id": "pair_a0011c96214842a9b5e1beed8e0da3cf",
+            "name": "name",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "pair_ffbee43fa1bf4041b7337ab2e5a147b5",
+            "name": "description",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "pair_edd1b8c9bdfa41f09e0231e6ad44c3d7",
+            "name": "versionName",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "pair_72500b275fff4b6296edf07af2612a1d",
+            "multiline": false,
+            "name": "filename",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "pair_f6e8393690a34a17871fd3017fb992a2",
+            "multiline": false,
+            "name": "contentType",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "id": "pair_3369f7e5569a4fb3bb58d1c0df3d6945",
+            "name": "data",
+            "type": "file",
+            "value": ""
+          }
+        ]
+      },
+      "created": 1549871701160,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=createBinary_00\n\n#### Input\n```javascript\n{\n  code: \"...\", //externally specified or generated code (3-64 charecters)\n  name: \"...\", //user name of binary; It is uu5String limited to 255 characters\n  description: \"...\", //user description of binary; It is uu5String limited to 4000 characters\n  versionName: \"...\", //user name of binary version; It is uu5String limited to 255 characters\n  filename: \"...\" //name of the uploaded file; \n                  //if not set it is obtained from http header or the default value \"defaultName\" is used\n  contentType: \"...\", //content type of the uploaded file;\n                      //if not set it is obtained from http header or the default value \"application/octet-stream\" is used\n  data: ... //binary data; required\n};\n```\n#### Validation schema\n```javascript\nshape({\n  code: code(),\n  name: uu5String(255),\n  description: uu5String(4000),\n  versionName: uu5String(255),\n  filename: string(255), \n  contentType: string(256),\n  data: binary().isRequired()\n})\n```\n#### Output\n```javascript\n{\n  id: \"...\", //generated unique code\n  awid: \"...\", //app module id - unique code specified externally\n  sys: {},\n  name: \"...\", //user name of binary; It is uu5String limited to 255 characters\n  code: \"...\", //identifier of the binary (all versions of binary have same code)\n  description: \"...\", //user description of binary\n  versionName: \"...\", //user name of binary version\n  filename: \"...\" //name of the uploaded file\n  contentType: \"...\", //content type of the uploaded file\n  uuAppErrorMap: {} //uuApp standard errorMap\n};\n```",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549535903047,
+      "method": "POST",
+      "modified": 1554802563164,
+      "name": "uu-app-binarystore/createBinary",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/createBinary",
+      "_type": "request"
+    },
+    {
+      "_id": "req_0a9bca32b2f610177ffb8a7b434596177d8e1ad0e5194741b4ba68f122674a1c",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n  \"code\": \"...\", \n  \"contentDisposition\": \"...\"\n}"
+      },
+      "created": 1549873558452,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=getBinaryData_00\n\n#### Input\n```javascript\n{ \n  code: \"...\", //identifier of the binary (all versions of binary have same code)\n  contentDisposition: \"...\" //style of returned binary data; possible values: [\"inline\", \"attachment\"]; default value \"attachment\"  \n};\n```\n#### Validation schema\n```javascript\nshape({\n  code: code().isRequired(),\n  contentDisposition: oneOf([\"inline\",\"attachment\"])\n})\n```\n#### Output\n Returns a binary data stream. ",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1547374969302.5,
+      "method": "GET",
+      "modified": 1554802961333,
+      "name": "uu-app-binarystore/getBinaryData",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/getBinaryData",
+      "_type": "request"
+    },
+    {
+      "_id": "req_564721a7114ae46001cb21cbd7c7d3ab29bfbe4392d152730886de00b8c474ab",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "disabled": false,
+            "id": "pair_c708b2ef8ccf4646b36cbe19bea8e5f3",
+            "name": "code",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "pair_a0011c96214842a9b5e1beed8e0da3cf",
+            "name": "versionName",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "pair_ffbee43fa1bf4041b7337ab2e5a147b5",
+            "name": "createVersion",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "pair_593e13d06414413a9a271457e18edc49",
+            "name": "revisionStrategy",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "pair_79fd3dfdb093434b9760f2029fe4a8c3",
+            "multiline": false,
+            "name": "filename",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "pair_f0cda1cf63704ff3bcd84b1f043c05a5",
+            "multiline": false,
+            "name": "contentType",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "id": "pair_b815ac76b6a549199b586088e27ebd90",
+            "multiline": false,
+            "name": "sys.rev",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "id": "pair_8caf9e1905e44221a762b3cbd299d7e1",
+            "name": "data",
+            "type": "file",
+            "value": ""
+          }
+        ]
+      },
+      "created": 1549873633782,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=updateBinaryData_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1547374969252.5,
+      "method": "POST",
+      "modified": 1554803021358,
+      "name": "uu-app-binarystore/updateBinaryData",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/updateBinaryData",
+      "_type": "request"
+    },
+    {
+      "_id": "req_3e55cc6a9e150eff6ccfc2fdc88ba554208827711cf1d635bfb9eb5fa983ec90",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"code\": \"...\"\n}"
+      },
+      "created": 1549873820458,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=getBinary_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1547374969202.5,
+      "method": "GET",
+      "modified": 1554803051465,
+      "name": "uu-app-binarystore/getBinary",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/getBinary",
+      "_type": "request"
+    },
+    {
+      "_id": "req_54c58d59cebb10346b942b54a8885a270233890352444d0de86b2120c8870035",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"code\": \"...\", \n  \"name\": \"...\", \n  \"description\": \"...\", \n  \"versionName\": \"...\", \n  \"filename\": \"...\", \n  \"contentType\": \"...\", \n  \"revisionStrategy\": \"...\",\n  \"sys\": {\n    \"rev\": \"...\" \n  }\n}"
+      },
+      "created": 1549873977671,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=updateBinary_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1546294502380.25,
+      "method": "POST",
+      "modified": 1554803082398,
+      "name": "uu-app-binarystore/updateBinary",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/updateBinary",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f3fcca58de32e8f713917cab601412e54a23caaead5b60f7f3f14643cf0bfae9",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"code\": \"...\"\n}"
+      },
+      "created": 1549874051681,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=deleteBinary_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1545754268969.125,
+      "method": "POST",
+      "modified": 1554803097638,
+      "name": "uu-app-binarystore/deleteBinary",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/deleteBinary",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e7c3122cb8e71118e3e5c6e6661dd890366baad32c50e55cf64035cefb39862d",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{ \n  \"codeList\": [\"...\"],\n  \"nameList\": [\"...\"],\n  \"contentTypeList\": [\"...\"], \n  \"pageInfo\": {} \n}"
+      },
+      "created": 1549874097644,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=listBinaries_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1545484152263.5625,
+      "method": "GET",
+      "modified": 1554803133643,
+      "name": "uu-app-binarystore/listBinaries",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/listBinaries",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2b918d4cbd00789bc755aaeccc9153128f600cec5562a5409e135d40e52c122e",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"id\": \"...\", \n  \"code\": \"...\",\n  \"versionName\": \"...\" \n}"
+      },
+      "created": 1549874169160,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=getBinaryVersion_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1545349093910.7812,
+      "method": "GET",
+      "modified": 1554803152893,
+      "name": "uu-app-binarystore/getBinaryVersion",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/getBinaryVersion",
+      "_type": "request"
+    },
+    {
+      "_id": "req_dbcbb729184eaa2734eec98dd68d8e6676b701cce3e66f35c18dcfb805de077f",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"id\": \"...\" ,\n  \"versionName\": \"...\", \n  \"revisionStrategy\": \"...\", \n  \"sys\": {\n    \"rev\": \"...\" \n  }\n}"
+      },
+      "created": 1549874236065,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=updateBinaryVersion_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1545281564734.3906,
+      "method": "POST",
+      "modified": 1554803192746,
+      "name": "uu-app-binarystore/updateBinaryVersion",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/updateBinaryVersion",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2f85750b7452bd7c5422f42b219d52794915b6073e4b52c979c4ad7b036c10dc",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"id\": \"...\", \n  \"code\": \"...\",\n  \"versionName\": \"...\",\n  \"contentDisposition\": \"...\"\n}"
+      },
+      "created": 1549874323580,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=getBinaryVersionData_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1545247800146.1953,
+      "method": "GET",
+      "modified": 1554803210790,
+      "name": "uu-app-binarystore/getBinaryVersionData",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/getBinaryVersionData",
+      "_type": "request"
+    },
+    {
+      "_id": "req_01a944c9fdd11089ca428b41bf05a2f1a337234ea15dc14fc2d53a028577dcf6",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"id\": \"...\"\n}"
+      },
+      "created": 1549874383993,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=deleteBinaryVersion_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1545230917852.0977,
+      "method": "POST",
+      "modified": 1554803223425,
+      "name": "uu-app-binarystore/deleteBinaryVersion",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/deleteBinaryVersion",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1b51db8acbdc1bf8f8f0d5c4e31f957b5d3e29444204b4741dd514dec3bb2660",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"code\": \"...\",\n  \"pageInfo\": {}\n}"
+      },
+      "created": 1549874428236,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-34df77ebe0a04adda6dcd62d32c4f513/book/page?code=listBinaryVersions_00",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1545222476705.0488,
+      "method": "GET",
+      "modified": 1554803242760,
+      "name": "uu-app-binarystore/listBinaryVersions",
+      "parameters": [],
+      "parentId": "fld_a35b5dd39b46929f55a1280f3110a0755e6c150f816dcd52bbd6215dcc0a2e2b",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/uu-app-binarystore/listBinaryVersions",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7e981e145cf9caffc96727d2543c9ab74b7ab0689d2ecd3dfa735dab0cb7fc7f",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"timeFrom\": \"2010-03-15T10:00:00.124\",\n  \"timeTo\": \"2010-03-15T12:30:00.892\",\n  \"spp\": \"async\",\n  \"pageInfo\": {\n    \"pageIndex\": 0, \n    \"pageSize\": 100 \n  }\n}"
+      },
+      "created": 1549876546784,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-926da88d2adb4449b69d3a57b81f189e/book/page?code=uuCmdSysGetAuditEntries",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549535903072,
+      "method": "GET",
+      "modified": 1554803322566,
+      "name": "sys/listAuditLogRecordsByTimeAndSpp",
+      "parameters": [],
+      "parentId": "fld_a2fd4abdb572c799d87127bd095238cd5cb0250057eca6931ffa9669b49db4eb",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/listAuditLogRecordsByTimeAndSpp",
+      "_type": "request"
+    },
+    {
+      "_id": "req_0315ef975c9670d1d133ca2b259c025f067602ed320a6f58dc50f475d64bca51",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"timeFrom\": \"2010-03-15T10:00:00.124\",\n  \"timeTo\": \"2010-03-15T12:30:00.892\",\n  \"pageInfo\": {\n    \"pageIndex\": 0, \n    \"pageSize\": 100 \n  }\n}"
+      },
+      "created": 1549876596545,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-926da88d2adb4449b69d3a57b81f189e/book/page?code=uuCmdSysListAuditEntriesByTimeForCurrentUser",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549535903059.5,
+      "method": "GET",
+      "modified": 1554803343645,
+      "name": "sys/listMyAuditLogRecordsByTime",
+      "parameters": [],
+      "parentId": "fld_a2fd4abdb572c799d87127bd095238cd5cb0250057eca6931ffa9669b49db4eb",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/listMyAuditLogRecordsByTime",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d602e6dcb913c05cd966b3e9a8cc9504f2f83acc70ed0981b5011fd162a9b144",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"toTime\": \"2010-03-15T14:45.000\"\n}"
+      },
+      "created": 1549876623298,
+      "description": "#### uuCmd documentation\nhttps://uuos9.plus4u.net/uu-bookkitg01-main/78462435-926da88d2adb4449b69d3a57b81f189e/book/page?code=uuCmdSysDeleteAuditEntries",
+      "headers": [
+        {
+          "id": "pair_216b98128c704d42b3159d954b349dde",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549535903053.25,
+      "method": "POST",
+      "modified": 1554803369862,
+      "name": "sys/deleteAuditLogRecordsBeforeTime",
+      "parameters": [],
+      "parentId": "fld_a2fd4abdb572c799d87127bd095238cd5cb0250057eca6931ffa9669b49db4eb",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/sys/deleteAuditLogRecordsBeforeTime",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ee8cd7cc69ac40125135e7130f0f3cfbe20f4babc7215adf1970070a14a42b8c",
+      "authentication": {
+        "prefix": "",
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"authoritiesUri\": \"...\"\n}"
+      },
+      "created": 1549880922691,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_09a27acb6f2d46059fd8d6af7f0ef18f",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1549880922691,
+      "method": "POST",
+      "modified": 1549881047806,
+      "name": "init",
+      "parameters": [],
+      "parentId": "fld_ed620d46b2c2016dcfa77dfe7b6f15dcc4414d2e036da70ab732d93ae1df121c",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ host  }}/{{ contextPath  }}/{{ awid  }}/init",
+      "_type": "request"
+    }
+  ]
+}
