@@ -51,63 +51,7 @@ export const List = UU5.Common.VisualComponent.create({
   //@@viewOn:reactLifeCycle
   getInitialState(){
     return {
-      items: [
-        {
-          iid: "0",
-          sys: {
-            cts: "01.01.2019 10:10:10",
-            mts: "02.02.2019 20:20:20",
-            rev: "2"
-          },
-          list: "0",
-          text: "První ukol",
-          completed: false
-        },
-        {
-          iid: "1",
-          sys: {
-            cts: "01.01.2019 11:11:11",
-            mts: "03.03.2019 13:13:13",
-            rev: "3"
-          },
-          list: "0",
-          text: "Druhý ukol",
-          completed: true
-        },
-        {
-          iid: "0",
-          sys: {
-            cts: "1.1.2019 10:10:10",
-            mts: "2.2.2019 02:02:02",
-            rev: "2"
-          },
-          list: "1",
-          text: "První ukol",
-          completed: false
-        },
-        {
-          iid: "1",
-          sys: {
-            cts: "21.10.2019 21:20:19",
-            mts: "03.03.2019 03:04:05",
-            rev: "3"
-          },
-          list: "1",
-          text: "Druhý ukol",
-          completed: true
-        },
-        {
-          iid: "2",
-          sys: {
-            cts: "11.11.2019 11:12:13",
-            mts: "31.03.2019 08:09:10",
-            rev: "3"
-          },
-          list: "1",
-          text: "Třetí ukol",
-          completed: false
-        }
-      ]
+      items: []
     }
   },
   //@@viewOff:reactLifeCycle
@@ -122,6 +66,7 @@ export const List = UU5.Common.VisualComponent.create({
             editItem.completed = editItem.completed ? false : true;
             editItem.sys.mts = new Date().toLocaleString();
             editItem.sys.rev++;
+            this.ldm.update(id, editItem, true).then(this.ldm.reload());
             return editItem
           } else return item
         })
@@ -146,8 +91,9 @@ export const List = UU5.Common.VisualComponent.create({
       return {
         items: [...state.items,newItem]
       }
+    return newItem;
     })
-    //Calls.setItems(getInitialState());
+    this.ldm.create(newItem, true);
   },
 
   removeItem(id){
@@ -156,6 +102,7 @@ export const List = UU5.Common.VisualComponent.create({
         items: state.items.filter(item => item.iid != id)
       }
     })
+    this.ldm.delete(id, true).then(this.ldm.reload());
   },
 
   editItem(id,newText){
@@ -167,12 +114,15 @@ export const List = UU5.Common.VisualComponent.create({
             newItem.text = newText;
             newItem.sys.mts = new Date().toLocaleString();
             newItem.sys.rev++;
+            this.ldm.update(id, newItem, true).then(this.ldm.reload());
             return newItem
           } else return item
         })
       }
     })
   },
+
+
   //@@viewOff:interface
 
   //@@viewOn:overriding
@@ -256,7 +206,6 @@ export const List = UU5.Common.VisualComponent.create({
     if (typeof onEditList == "function"){
       onEditList(this.props.lid, this.props.text);
     }
-
   },
 
   _removeList(){
@@ -267,11 +216,8 @@ export const List = UU5.Common.VisualComponent.create({
         return {
           items: state.items.filter(item => item.list != this.props.lid)
         }
-        }
-      )
-
+      })
     }
-
   },
 
   _getHeader(){
@@ -302,39 +248,66 @@ export const List = UU5.Common.VisualComponent.create({
       </UU5.Bricks.Div>
     )
   },
+
+  _setItems(data){
+    this.setState(() => {
+      return {
+        items: [...data]
+      }
+    })
+  },
+
   //@@viewOff:private
 
   //@@viewOn:render
   render() {
     return (
-      <UU5.Bricks.Div {...this.getMainPropsToPass()} style="margin: 0px 20px;textAlign: center;">
-        <UU5.Bricks.Modal ref_={(modal) => this._modal = modal}/>
+      <UU5.Common.ListDataManager
+        ref_={ldm => this.ldm = ldm}
+        pessimistic={true}
+        onLoad = {Calls.getItems}
+        onCreate = {Calls.createItem}
+        onDelete = {Calls.removeItem}
+        onUpdate = {Calls.updateItem}
+      >
+        {({  data, viewState, errorState, errorData }) => {
+          if (data) {
+            if (this.state.items.length == 0 && data.length != 0) this._setItems(data);
 
-        <UU5.Bricks.Column
-          key={this.props.lid}
-        >
-          <UU5.Bricks.Div>
-            <UU5.Bricks.Panel
-              header ={this._getHeader()}
-              iconExpanded = "uu5-arrow-up"
-              iconCollapsed = "uu5-arrow-down"
-              style = "margin: 5px;">
+            return(
+              <UU5.Bricks.Div {...this.getMainPropsToPass()} style="margin: 0px 20px;textAlign: center;">
+                <UU5.Bricks.Modal ref_={(modal) => this._modal = modal}/>
 
-              {this._getItems(this.props.lid)}
+                <UU5.Bricks.Column
+                  key={this.props.lid}
+                >
+                  <UU5.Bricks.Div>
+                    <UU5.Bricks.Panel
+                      header={this._getHeader()}
+                      iconExpanded="uu5-arrow-up"
+                      iconCollapsed="uu5-arrow-down"
+                      style="margin: 5px;">
 
-              <UU5.Bricks.Button content="Add Item"
-                                 onClick={this._openAddItemModal}
-                                 bgStyle="outline"
-                                 style = "margin: 10px"
-              />
+                      {this._getItems(this.props.lid)}
 
-            </UU5.Bricks.Panel>
-          </UU5.Bricks.Div>
-        </UU5.Bricks.Column>
+                      <UU5.Bricks.Button content="Add Item"
+                                         onClick={this._openAddItemModal}
+                                         bgStyle="outline"
+                                         style="margin: 10px"
+                      />
 
-
-
-      </UU5.Bricks.Div>
+                    </UU5.Bricks.Panel>
+                  </UU5.Bricks.Div>
+                </UU5.Bricks.Column>
+              </UU5.Bricks.Div>
+            )
+          } else if (viewState == "load") {
+            return <UU5.Bricks.Loading />;
+          } else {
+            return <UU5.Bricks.Error error = {errorData}/>
+          }
+        }}
+      </UU5.Common.ListDataManager>
     );
   }
   //@@viewOff:render

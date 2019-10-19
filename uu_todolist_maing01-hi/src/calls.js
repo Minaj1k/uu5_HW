@@ -20,11 +20,17 @@ let Calls = {
 
   getItems() {
     return new Promise((resolve,reject)=>{
-      const ls = this.checkDB();
-      console.log("ahoj" + ls);
-      //const db = JSON.parse(ls);
+      const ls = localStorage.getItem("TODO_DB");
+      if (!ls) {
+        const newDB = {lists: [], items: []};
+        localStorage.setItem("TODO_DB", JSON.stringify(newDB));
+        resolve(newDB.items)
 
-      resolve(ls.items);
+      } else {
+        const db = JSON.parse(ls);
+        resolve(db.items);
+
+      }
     })
   },
 
@@ -34,34 +40,122 @@ let Calls = {
       if (!ls){
         const newDB = {lists: [], items: []};
         localStorage.setItem("TODO_DB", JSON.stringify(newDB));
-        resolve(newDB)
+        resolve(newDB.lists)
       } else {
         const db = JSON.parse(ls);
-        resolve(db);
+        resolve(db.lists);
       }
     })
   },
 
   createItem(dtoInData) {
     return new Promise((resolve,reject)=>{
-      const ls = this.checkDB();
-
-      const db = JSON.parse(ls);
-      db.items.push(dtoInData);
-      localStorage.setItem("TODO_DB", JSON.stringify(db));
-      resolve(dtoInData);
+      const ls = localStorage.getItem("TODO_DB");
+      if (!ls){
+        const newDB = {lists: [], items: []};
+        newDB.items.push(dtoInData);
+        localStorage.setItem("TODO_DB", JSON.stringify(newDB));
+        resolve(newDB)
+      } else {
+        const db = JSON.parse(ls);
+        db.items.push(dtoInData);
+        localStorage.setItem("TODO_DB", JSON.stringify(db));
+        resolve(dtoInData);
+      }
     })
   },
 
   createList(dtoInData) {
     return new Promise((resolve,reject)=>{
-      const ls = this.checkDB();
-
-      const db = JSON.parse(ls);
-      db.list.push(dtoInData);
-      localStorage.setItem("TODO_DB", JSON.stringify(db));
-      resolve(dtoInData);
+      const ls = localStorage.getItem("TODO_DB");
+      if (!ls){
+        const newDB = {lists: [], items: []};
+        newDB.lists.push(dtoInData);
+        localStorage.setItem("TODO_DB", JSON.stringify(newDB));
+        resolve(newDB)
+      } else {
+        const db = JSON.parse(ls);
+        db.lists.push(dtoInData);
+        localStorage.setItem("TODO_DB", JSON.stringify(db));
+        resolve(dtoInData);
+      }
     })
+  },
+
+  updateItem(id,newItem) {
+    return new Promise((resolve,reject)=>{
+      const ls = localStorage.getItem("TODO_DB");
+      if (!ls){
+        const newDB = {lists: [], items: []};
+        newDB.items.push(newItem);
+        localStorage.setItem("TODO_DB", JSON.stringify(newDB));
+        resolve(newDB)
+      } else {
+        const db = JSON.parse(ls);
+        db.items = db.items.map(item => {
+          if (item.iid == id) {
+            return newItem
+          } else return item;
+        })
+        localStorage.setItem("TODO_DB", JSON.stringify(db));
+        resolve(newItem);
+      }
+    })
+  },
+
+  updateList(id, newList) {
+    return new Promise((resolve,reject)=>{
+      const ls = localStorage.getItem("TODO_DB");
+      if (!ls){
+        const newDB = {lists: [], items: []};
+        newDB.lists.push(newItem);
+        localStorage.setItem("TODO_DB", JSON.stringify(newDB));
+        resolve(newDB)
+      } else {
+        const db = JSON.parse(ls);
+        db.lists = db.lists.map(list => {
+          if (list.lid == id) {
+            return newList
+          } else return list;
+        })
+        localStorage.setItem("TODO_DB", JSON.stringify(db));
+        resolve(newList);
+      }
+    })
+  },
+
+
+  removeItem(id){
+    return new Promise((resolve,reject)=>{
+      const ls = localStorage.getItem("TODO_DB");
+      if (!ls){
+        const newDB = {lists: [], items: []};
+        localStorage.setItem("TODO_DB", JSON.stringify(newDB));
+        resolve(newDB)
+      } else {
+        const db = JSON.parse(ls);
+        db.items = db.items.filter(item => item.iid != id);
+        localStorage.setItem("TODO_DB", JSON.stringify(db));
+      }
+    })
+  },
+
+  removeList(id){
+    return new Promise((resolve,reject)=>{
+      const ls = localStorage.getItem("TODO_DB");
+      if (!ls){
+        const newDB = {lists: [], items: []};
+        localStorage.setItem("TODO_DB", JSON.stringify(newDB));
+        resolve(newDB)
+      } else {
+        const db = JSON.parse(ls);
+        db.lists = db.lists.filter(list => list.lid != id);
+        db.items = db.items.filter(item => item.list != id);
+        localStorage.setItem("TODO_DB", JSON.stringify(db));
+        resolve(id)
+      }
+    })
+
   },
 
   /*

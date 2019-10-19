@@ -3,7 +3,7 @@ import * as UU5 from "uu5g04";
 import "uu5g04-bricks";
 import Config from "./config/config.js";
 
-//import Calls from "calls";
+import Calls from "calls";
 
 import "./lists.less";
 import List from "./list";
@@ -32,26 +32,7 @@ export const Lists = UU5.Common.VisualComponent.create({
   //@@viewOn:reactLifeCycle
   getInitialState(){
     return {
-      lists: [
-        {
-          lid: "0",
-          sys: {
-            cts: "01.01.2019 10:10:10",
-            mts: "02.02.2019 20:20:20",
-            rev: "0"
-          },
-          text: "Nakup"
-        },
-        {
-          lid: "1",
-          sys: {
-            cts: "01.01.2019 10:10:10",
-            mts: "02.02.2019 20:20:20",
-            rev: "0"
-          },
-          text: "Prace"
-        }
-      ]
+      lists: []
     }
   },
   //@@viewOff:reactLifeCycle
@@ -74,20 +55,19 @@ export const Lists = UU5.Common.VisualComponent.create({
         lists: [...state.lists,newList]
       }
     })
-    //Calls.setItems(getInitialState());
+    this.ldm.create(newList, true);
   },
 
   removeList(id){
-    //alert("Ahooj");
     this.setState((state) => {
       return {
         lists: state.lists.filter(list => list.lid != id)
       }
     })
+    this.ldm.delete(id, true).then(this.ldm.reload());
   },
 
   editList(id,newName){
-    //alert("Nazdar!");
     this.setState((state) => {
       return {
         lists: state.lists.map(list => {
@@ -96,11 +76,14 @@ export const Lists = UU5.Common.VisualComponent.create({
             newList.text = newName;
             newList.sys.mts = new Date().toLocaleString();
             newList.sys.rev++;
+            this.ldm.update(id, newList, true).then(this.ldm.reload());
             return newList
           } else return list
         })
       }
     })
+
+      //.then(this.ldm.reload());
   },
   //@@viewOff:interface
 
@@ -108,8 +91,8 @@ export const Lists = UU5.Common.VisualComponent.create({
   //@@viewOff:overriding
 
   //@@viewOn:private
-  _getLists(){
-    const lists = this.state.lists.map(list => {
+  _getLists(data){
+    const lists = data.map(list => {
       return (
         <UU5.Bricks.Div key={UU5.Common.Tools.generateUUID()}>
           <List {...list}
@@ -151,7 +134,8 @@ export const Lists = UU5.Common.VisualComponent.create({
     return (
       <UU5.Forms.Form
         onSave = {(opt) => {
-          this.editList(id, opt.values.newName)
+          this.editList(id, opt.values.newName);
+
           this._modal.close();
         }}
         onCancel = {() => {
@@ -167,41 +151,64 @@ export const Lists = UU5.Common.VisualComponent.create({
 
   _openAddModal(){
     this._modal.open({
-      header: "Add new list",
-      content: this._getAddListForm(),
-    })
+        header: "Add new list",
+        content: this._getAddListForm(),
+      });
+
   },
 
   _openEditModal(id,name){
-    //alert("hmm");
     this._modal.open({
       header: "Edit list",
       content: this._getEditListForm(id,name),
     })
   },
 
-  // MOCK
-  // _setListsFromLs (data){
-  //
-  //   const eData = JSON.parse(data);
-  //   this.setState(state => {
-  //     return state.lists = eData;
-  //   })
-  //
-  // },
+  _setLists(data){
+    this.setState(() => {
+      return {
+        lists: [...data]
+      }
+    })
+  },
+
 
   //@@viewOff:private
 
   //@@viewOn:render
   render() {
     return (
-      <UU5.Bricks.Div {...this.getMainPropsToPass()} style="margin: 20px;textAlign: center" key={UU5.Common.Tools.generateUUID()}>
-        <UU5.Bricks.Header level="1" content="TODO Lists" key={UU5.Common.Tools.generateUUID()}/>
-        <UU5.Bricks.Modal ref_={(modal) => this._modal = modal} key={UU5.Common.Tools.generateUUID()}/>
-        {this._getLists()}
-        <UU5.Bricks.Div style="borderBottom: 2px black solid;margin: 10px" key={UU5.Common.Tools.generateUUID()}/>
-        <UU5.Bricks.Button content="Add new list" onClick={this._openAddModal} bgStyle="outline" key={UU5.Common.Tools.generateUUID()}/>
-      </UU5.Bricks.Div>
+      <UU5.Common.ListDataManager
+        ref_={ldm => this.ldm = ldm}
+        pessimistic={true}
+        onLoad = {Calls.getLists}
+        onCreate = {Calls.createList}
+        onUpdate = {Calls.updateList}
+        onDelete = {Calls.removeList}
+
+      >
+        {({  data, viewState, errorState, errorData }) => {
+          if (data) {
+            if (this.state.lists.length == 0 && data.length != 0) this._setLists(data);
+
+            return(
+              <UU5.Bricks.Div {...this.getMainPropsToPass()} style="margin: 20px;textAlign: center" key={UU5.Common.Tools.generateUUID()}>
+                <UU5.Bricks.Header level="1" content="TODO Lists" key={UU5.Common.Tools.generateUUID()}/>
+                <UU5.Bricks.Modal ref_={(modal) => this._modal = modal} key={UU5.Common.Tools.generateUUID()}/>
+                {this._getLists(data)}
+                <UU5.Bricks.Div style="borderBottom: 2px black solid;margin: 10px" key={UU5.Common.Tools.generateUUID()}/>
+                <UU5.Bricks.Button content="Add new list" onClick={this._openAddModal} bgStyle="outline" key={UU5.Common.Tools.generateUUID()}/>
+
+              </UU5.Bricks.Div>
+            )
+          } else if (viewState == "load") {
+            return <UU5.Bricks.Loading />;
+          } else {
+            return <UU5.Bricks.Error error = {errorData}/>
+          }
+        }}
+      </UU5.Common.ListDataManager>
+
     );
   }
   //@@viewOff:render
